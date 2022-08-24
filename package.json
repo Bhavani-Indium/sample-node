@@ -1,0 +1,14 @@
+{
+  "name": "sample-node",
+  "version": "1.0.0",
+  "description": "sample node.js project",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "",
+  "license": "ISC"
+}
