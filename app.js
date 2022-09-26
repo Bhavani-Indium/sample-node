@@ -1,9 +1,16 @@
 const express = require('express');
-const cors = require('cors');
+const cors = require('cors'); // cross origin
 const config = require('config');
 
 const url = config.get('db_url');
 const app = express();
+
+app.get('/', (req, res)=>{
+  console.log('welcome....');
+  res.status(200).send({
+    message: 'welcome',
+  });
+})
 
 app.use(express.json());
 app.use(cors());

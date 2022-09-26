@@ -1,6 +1,10 @@
 const http = require('http');
 const config = require('config');
+
 const app = require('../app');
+
+// require('express'),
+// require('../app')
 
 const port = config.get('serverPort') || 3000;
 app.set('port', port);
